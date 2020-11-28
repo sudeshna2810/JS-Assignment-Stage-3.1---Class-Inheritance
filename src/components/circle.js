@@ -3,13 +3,13 @@ const Shape = require("./shape.js");
 
 // declare class
 class Circle extends Shape {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
   }
   calculateArea() {
-    console.log("Calculated Area of Circle");
+    console.log("Calculated Area of Circle with color: " + this.color);
   }
 }
 
 // export class using module.exports
-module.exports = Shape;
+module.exports = Circle;
